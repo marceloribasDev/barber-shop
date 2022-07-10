@@ -17,6 +17,7 @@ body {
 *******************/
 
 .home {
+  position: relative;
   background-size: cover;
   background-image: url(../img/bg-home.jpg);
   height: 100vh;
@@ -65,12 +66,35 @@ body {
 *   HOME - BANNER
 *******************/
 .home .banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 270px;
+  width: 770px;
+  margin-left: -385px;
+  margin-top: -85px;
+  /* background: rebeccapurple; */
   color: #fff;
   text-align: center;
 }
 
 .home .banner span {
   display: block;
+}
+
+.home .banner .slogan1 {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+.home .banner h1 {
+  font-size: 120px;
+}
+
+.home .banner .slogan2 {
+  margin-bottom: 15px;
 }
 
 /*******************
