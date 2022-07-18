@@ -209,7 +209,7 @@ body {
 *******************/
 
 .services {
-  padding: 100px;
+  padding: 100px 0;
   text-align: center;
   background-color: var(--color-primary-light);
 }
@@ -218,6 +218,7 @@ body {
   color: var(--color-secundary);
   font-size: 50px;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .services .boxes {
@@ -244,8 +245,26 @@ body {
 }
 
 /*******************
-*       HOME
+*    Appoiment
 *******************/
+.appointment {
+  padding: 100px 0;
+  text-align: center;
+  background-color: var(--color-primary);
+  height: 100vh;
+  background-image: url(../img/chair-ic.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 300px;
+}
+
+.appointment h2 {
+  color: var(--color-primary-light);
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
 
 /*******************
 *       HOME
