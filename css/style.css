@@ -1,13 +1,13 @@
 :root {
   --color-primary: #917758;
-  --color-primary-light: #f5eee5;
-  --color-secundary: #3c2915;
+  --color-secondary: #3c2915;
+  --color-primary-light: #f5eee6;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
@@ -15,20 +15,21 @@ body {
 }
 
 .container {
-  /* background: red; */
   width: 1170px;
   margin: 0 auto;
 }
 
-/*******************
-*       HOME
-*******************/
 
+/*************
+*   HOME
+*************/
 .home {
   position: relative;
   background-size: cover;
-  background-image: url(../img/bg-home.jpg);
+  background-image: url(../images/bg-home.jpg);
   height: 100vh;
+  /* viewport height */
+  background-attachment: fixed;
 }
 
 .home .header {
@@ -53,7 +54,7 @@ body {
 }
 
 .home .header .nav ul li a {
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
@@ -66,13 +67,15 @@ body {
   color: var(--color-primary);
 }
 
-.home .header .nav ul li .logo {
+.home .header .logo {
   margin: 0 30px;
 }
 
-/*******************
-*   HOME - BANNER
-*******************/
+
+
+/*****************
+*  HOME - BANNER
+******************/
 .home .banner {
   position: absolute;
   top: 50%;
@@ -80,9 +83,9 @@ body {
   height: 270px;
   width: 770px;
   margin-left: -385px;
-  margin-top: -85px;
-  /* background: rebeccapurple; */
-  color: #fff;
+  margin-top: -75px;
+
+  color: white;
   text-align: center;
 }
 
@@ -105,11 +108,13 @@ body {
   margin-bottom: 15px;
 }
 
-/*******************
-*       ABOUT
-*******************/
+
+
+/***********
+*  ABOUT
+************/
 .about {
-  background: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 .about .container {
@@ -117,11 +122,11 @@ body {
 }
 
 .about .timing {
-  width: 33%;
-  padding: 20px;
-  background-image: url(../img/brush-big.jpg);
   position: relative;
   top: -50px;
+  width: 33%;
+  padding: 20px;
+  background-image: url(../images/brush-big.jpg);
 }
 
 .about .timing .overlay {
@@ -133,6 +138,7 @@ body {
 .about .timing .icon-cut {
   width: 50px;
 }
+
 
 .about .timing h3 {
   color: var(--color-primary);
@@ -150,41 +156,41 @@ body {
 .about .timing .text:after {
   content: '•';
   display: block;
-  color: #fff;
   font-size: 25px;
+  color: white;
   margin-top: 10px;
 }
 
-.about .timing .text:last-of-type::after {
+.about .timing .text:last-of-type:after {
   content: '|';
 }
 
 .about .timing .text h4 {
-  color: #c3c3c3;
-  font-weight: 450;
+  color: grey;
+  font-weight: 400;
   font-size: 15px;
-
 }
 
 .about .timing span {
-  color: #fff;
+  color: white;
   font-size: 15px;
   display: block;
 }
 
-.about .expirence {
+
+.about .experience {
   width: 66%;
-  color: #fff;
+  color: white;
   margin-left: 7%;
   margin-top: 100px;
 }
 
-.about .expirence h2 {
+.about .experience h2 {
   font-weight: 400;
   font-size: 40px;
 }
 
-.about .expirence h2:after {
+.about .experience h2:after {
   display: block;
   content: '';
   width: 100px;
@@ -193,21 +199,23 @@ body {
   margin: 20px 0;
 }
 
-.about .expirence .text {
+.about .experience .text {
   display: flex;
   justify-content: space-between;
 }
 
-.about .expirence .text p {
-  margin-top: 20px;
+
+.about .experience .text p {
+  margin-bottom: 20px;
   font-weight: 100;
   font-size: 17px;
 }
 
-/*******************
-*     Services 
-*******************/
 
+
+/***********
+* SERVICES
+************/
 .services {
   padding: 100px 0;
   text-align: center;
@@ -215,9 +223,9 @@ body {
 }
 
 .services h2 {
-  color: var(--color-secundary);
-  font-size: 50px;
+  color: var(--color-secondary);
   font-weight: 400;
+  font-size: 50px;
   margin-bottom: 10px;
 }
 
@@ -234,7 +242,7 @@ body {
 }
 
 .services .box h4 {
-  color: var(--color-secundary);
+  color: var(--color-secondary);
   margin-top: 30px;
 }
 
@@ -244,14 +252,16 @@ body {
   line-height: 25px;
 }
 
-/*******************
-*    Appoiment
-*******************/
+
+
+/**************
+* APPOINTMENT
+***************/
 .appointment {
   padding: 100px 0;
   background-color: var(--color-primary);
-  /* height: 100vh; */
-  background-image: url(../img/chair-ic.png);
+  height: 100vh;
+  background-image: url(../images/chair-ic.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 300px;
@@ -259,8 +269,8 @@ body {
 
 .appointment h2 {
   color: var(--color-primary-light);
-  font-size: 50px;
   font-weight: 400;
+  font-size: 50px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -270,8 +280,9 @@ body {
   display: block;
 }
 
+
 .appointment form {
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 .appointment .personal-data {
@@ -286,12 +297,12 @@ body {
 }
 
 .appointment .input-wrapper:last-of-type {
-  margin: 0;
+  margin-right: 0;
 }
 
 .appointment label {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 2px;
   color: var(--color-primary-light);
 }
@@ -311,8 +322,8 @@ body {
 }
 
 .appointment button {
-  background-color: var(--color-secundary);
-  color: #fff;
+  background-color: var(--color-secondary);
+  color: white;
   padding: 15px 40px;
   border: none;
   margin-top: 10px;
@@ -321,10 +332,113 @@ body {
 }
 
 
-/*******************
-*       HOME
-*******************/
+/**************
+* GALLERY
+***************/
+.gallery {
+  padding: 100px 0;
+  background-color: var(--color-primary-light);
+}
 
-/*******************
-*       HOME
-*******************/
+.gallery h2 {
+  color: var(--color-secondary);
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.gallery img {
+  margin: 0 auto;
+  display: block;
+}
+
+.gallery .gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 900px;
+  height: 80vh;
+  margin: 50px auto;
+}
+
+.gallery .gallery-wrapper div {
+  border: 10px solid var(--color-primary);
+  margin: 6px;
+  width: 33%;
+}
+
+.gallery .gallery-wrapper div img {
+  width: 100%;
+}
+
+
+
+/**************
+* LOCATION
+***************/
+.location {
+  padding: 100px 0;
+  background: url(../images/bg-location.jpg);
+  background-size: cover;
+}
+
+.location .head {
+  display: flex;
+  justify-content: space-between;
+  background-color: #191919;
+  padding: 40px;
+  width: 100%;
+  ;
+}
+
+.location .head .info {
+  display: flex;
+  align-items: center;
+}
+
+.location .head .info .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-primary);
+  border-radius: 100%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.location .head .info .text span {
+  display: block;
+  font-size: 13px;
+}
+
+.location .head .info .text span:first-child {
+  color: silver;
+}
+
+.location .head .info .text span:last-child {
+  color: white;
+}
+
+.location .map {
+  width: 100%;
+}
+
+.location .map iframe {
+  width: 100%;
+}
+
+
+
+/*********
+* FOOTER
+**********/
+.footer {
+  background-color: #191919;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  font-size: 12px;
+}
