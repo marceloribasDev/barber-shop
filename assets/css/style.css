@@ -249,9 +249,8 @@ body {
 *******************/
 .appointment {
   padding: 100px 0;
-  text-align: center;
   background-color: var(--color-primary);
-  height: 100vh;
+  /* height: 100vh; */
   background-image: url(../img/chair-ic.png);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -263,6 +262,62 @@ body {
   font-size: 50px;
   font-weight: 400;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+.appointment img {
+  margin: 0 auto;
+  display: block;
+}
+
+.appointment form {
+  margin-top: 70px;
+}
+
+.appointment .personal-data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.appointment .input-wrapper {
+  width: 100%;
+  margin-right: 50px;
+}
+
+.appointment .input-wrapper:last-of-type {
+  margin: 0;
+}
+
+.appointment label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 2px;
+  color: var(--color-primary-light);
+}
+
+.appointment .personal-data input,
+.appointment .personal-data select,
+.appointment textarea {
+  padding: 10px;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.appointment textarea {
+  height: 100px;
+}
+
+.appointment button {
+  background-color: var(--color-secundary);
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 
